@@ -1,4 +1,5 @@
-sorry everyone, 由于作者自身原因，没有精力和时间处理issues,该插件已经不做维护了，希望大家见谅。
+
+fork之后 修改了源码 默认打开图片黏贴复制功能
 # quill-image-extend-module 
 vue-quill-editor的增强模块，
 
