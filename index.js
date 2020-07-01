@@ -203,9 +203,10 @@ export class ImageExtend {
      */
     insertImg() {
         const self = QuillWatch.active
-        self.quill.insertEmbed(QuillWatch.active.cursorIndex, 'image', self.imgURL)
+        const cursorIndex = QuillWatch.active.cursorIndex || self.quill.selection.lastRange.index;
+        self.quill.insertEmbed(cursorIndex, 'image', self.imgURL)
         self.quill.update()
-        self.quill.setSelection(self.cursorIndex+1);
+        self.quill.setSelection(cursorIndex+1);
     }
 
     /**
